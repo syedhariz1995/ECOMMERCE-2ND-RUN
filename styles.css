@@ -154,6 +154,7 @@ button:active{
 
 #highlights{
     position: relative;
+    max-width: 100vw;
 }
 
 
