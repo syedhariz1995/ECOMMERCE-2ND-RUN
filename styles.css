@@ -7,12 +7,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* NAVIGATION */
+
 nav{
-    height: 80px;
+    height: 80px;        /*Use this on nav*/
     display: flex;
 }
 
-.nav__container{
+img{
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;       /*Add this for big images for laptop size screens*/
+    padding: 20px;
+}
+
+.nav__container{       /*Div for nav*/
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
@@ -20,6 +29,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+
+.purple{
+    color: #7342d6;
 }
 
 .logo{
@@ -54,4 +67,64 @@ li{
 
 .nav__link--primary:hover{
     text-decoration: none;
+}
+
+#landing{
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+header{
+    height: calc(100vh - 80px);   /* 100vh minus height of nav bar */
+}
+
+.header__container{
+    padding-top: 20px;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__description{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+h1{
+    font-size: 56px;
+    color: #7342d6;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:active{
+    transform: translateY(1px);  /*Clicking small animation*/
+}
+
+.btn{
+    background-color: #7342d6;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.header__img--wrapper{
+    padding: 20px;
 }
