@@ -46,6 +46,7 @@ p{
 
 .logo{
     width: 160px;
+    padding: 8px;
 }
 
 ul{
@@ -158,6 +159,13 @@ button:active{
     margin: 0 auto;
 }
 
+.row__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* HIGHTLIGHTS */
 
@@ -239,6 +247,7 @@ button:active{
 
 .books{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book{
@@ -263,9 +272,16 @@ button:active{
     transform: scale(1.03);
 }
 
+.book__title,
+.book__ratings,
+.book__price{
+    padding-left: 20px;
+}
+
 .book__title{
     font-size: 20px;
     margin-bottom: 8px;
+    font-weight: 500;
 }
 
 .book__title:hover{
@@ -289,3 +305,11 @@ button:active{
     font-size: 20px;
     color: gray;
 }
+
+
+/* EXPLORE */
+
+#explore{
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
